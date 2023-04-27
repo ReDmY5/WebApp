@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/ homepage.php
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^mod/([0-9]+)/?$ mod.php?id=$1 [NC,L]
+RewriteRule ^cart/([0-9]+)/?$ cart.php?delete_all=$1 [NC,L]
+RewriteRule ^cart/([0-9]+)/?$ cart.php?buy=$1 [NC,L] 
+RewriteRule ^cart/([0-9]+)/?$ cart.php?add=$1 [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /404.php [L]
