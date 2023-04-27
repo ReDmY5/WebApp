@@ -790,25 +790,7 @@ section{
     font-weight: 600;
   }
   
-  .box_product .btn {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .box_product .btn:hover {
-    background-color: #fff;
-    color: #000;
-  }
+
   
   .box_product a {
     display: block;
