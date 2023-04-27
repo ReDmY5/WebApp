@@ -1,7 +1,11 @@
 
 <?php
-include_once "config.php";
 session_start();
+?>
+
+<?php
+include_once "config.php";
+
 
 if(isset($_SESSION['admin_name'])){
     $user_name = $_SESSION['admin_name'];
