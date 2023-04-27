@@ -54,7 +54,7 @@ include_once "header.php";
             <input type="text" name="name" placeholder="Ваше ім'я" class="box">
             <input type="email" name="email" placeholder="Ваш email" class="box">
             <textarea name="textс" class="box" placeholder="Ваше повідомлення" cols="30" rows="10"></textarea>
-            <input type="submit" value="Відправити" name="send-text" class="btn" id='btn_contacts'>
+            <input type="submit" value="Відправити" name="send-text" class="btn3" id='btn_contacts'>
         </form>
 
     </div>
