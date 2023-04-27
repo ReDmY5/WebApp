@@ -106,22 +106,10 @@ include_once "header.php";
 </div>
 </div>
 
-
-
-
-
-
-
-
-
 <?php
 include_once "footer.php";
 ?>
   
-
-
-<script src="js/script1.js"></script>
-
 
 </body>
 </html>
