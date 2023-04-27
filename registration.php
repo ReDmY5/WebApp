@@ -67,7 +67,7 @@ include_once "header.php";
          };
       };
       ?>
-      <input type="text" name="name" pattern="[a-zA-Z]+" required placeholder="Введіть ваше ім'я (тільки ENG букви)">
+      <input type="text" name="name" pattern="[a-zA-Z0-9]+" required placeholder="Введіть ваше ім'я (тільки ENG букви)">
       <input type="email" name="email" required placeholder="Введіть ваш Email">
       <input type="password" name="password" required placeholder="Введіть ваш пароль">
       <input type="password" name="cpassword" required placeholder="Повторіть ваш пароль">
