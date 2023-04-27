@@ -64,14 +64,9 @@ include_once "head.php";
 
 <body>
 
-
 <?php
 include_once "header.php";
 ?>
-
-
-
-
 
 
 
@@ -116,10 +111,6 @@ if((isset($_SESSION['admin_name']))||(isset($_SESSION['user_name']))):
 
 
     </div>
-
-
-
-
 
 
 
