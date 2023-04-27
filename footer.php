@@ -1,3 +1,3 @@
 <section class="footer">
-    <div class="credit"> MySite | 2023 </div>
+    <div class="credit"> MyGuitar | 2023 </div>
 </section>
