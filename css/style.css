@@ -328,7 +328,7 @@ section{
   }
   
   .home .row .image img{
-    height:35rem;
+    height:60rem;
     animation: float 4s linear infinite;
   }
   @keyframes float{
@@ -866,7 +866,9 @@ section{
   
   @media (max-width: 767px) {
   
-
+.home .row .image img{
+    height:35rem;
+  }
 .error404{
     width: 150px;
     padding-top:420px;
