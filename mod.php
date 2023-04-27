@@ -83,8 +83,6 @@ include_once "header.php";
 <?php
 include_once "footer.php";
 ?>
-  
-<script src="js/script1.js"></script>
 
 </body>
 </html>
