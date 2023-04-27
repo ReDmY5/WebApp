@@ -16,27 +16,25 @@ $row = mysqli_fetch_assoc($req);
 
 
 if(isset($_POST['button'])){
-    // Отримати значення полів форми
     $name = $_POST['name'];
     $opis = $_POST['opis'];
     $price = $_POST['price'];
     $current_image = $_POST['current_image'];
 
-    // Перевірка, чи було вибрано нове зображення
     if(isset($_FILES['image']['name']) && $_FILES['image']['name']!="") {
-        // Завантажити нове зображення
+ 
         $imagef = $_FILES['image']['name'];
         $image_tmp_name = $_FILES['image']['tmp_name'];
         $image_folder = 'uploaded_img/'.$imagef;
         move_uploaded_file($image_tmp_name, $image_folder);
-        // Використати нове зображення
+
         $image = $imagef;
     } else {
-        // Використати поточне зображення
+
         $image = $current_image;
     }
 
-    // Оновити дані в базі даних
+
     $update_query = mysqli_query($conn , "UPDATE Products SET name='$name', opis='$opis', price='$price', image='$image' WHERE id='$id'") or die('query failed');
 
     if($update_query){
