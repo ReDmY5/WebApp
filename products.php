@@ -87,7 +87,6 @@ if((isset($_SESSION['admin_name']))||(isset($_SESSION['user_name']))):
     </div>
 <?php
 include_once "footer.php";
-?>
-  
+?> 
 </body>
 </html>
