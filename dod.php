@@ -1,13 +1,9 @@
 <?php
 session_start();
-
 if(!isset($_SESSION['admin_name'])){
     header('location:authorisation');
  }
-
-
- include_once "config.php";
-
+include_once "config.php";
 
 if(isset($_POST['button'])){
    $p_name = $_POST['name'];
@@ -17,7 +13,7 @@ if(isset($_POST['button'])){
    $image_tmp_name = $_FILES['image']['tmp_name'];
    $image_folder = 'uploaded_img/'.$imagef;
 
-   $insert_query = mysqli_query($conn , "INSERT INTO Products VALUES(NULL, '$p_name', '$opis','$price','$imagef')") or die('query failed');
+   $insert_query = mysqli_query($conn , "INSERT INTO products VALUES(NULL, '$p_name', '$opis','$price','$imagef')") or die('query failed');
 
    if($insert_query){
       move_uploaded_file($image_tmp_name, $image_folder);
@@ -26,8 +22,6 @@ if(isset($_POST['button'])){
        header("location:dod");
    }
 };
-
-
     ?>
 
 <?php
