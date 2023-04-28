@@ -1,20 +1,13 @@
-
 <?php
 session_start();
 ?>
 <?php
 
-
 include_once "config.php";
-
 if(isset($_POST['send-text'])){
-    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $textc = $_POST['textс'];
-
-    
-
     if($name!=''&&$email!=''&&$textc!=''){
     $insert_query = mysqli_query($conn , "INSERT INTO textcl VALUES(NULL, '$name','$email','$textc')") or die('query failed');
     header("Location:contacts");}
@@ -28,16 +21,11 @@ if(isset($_POST['send-text'])){
 include_once "head.php";
 ?>
 
-
 <body>
-
 
 <?php
 include_once "header.php";
 ?>
-
-
-
 
 <section class="contact" id="contact">
 
@@ -63,11 +51,8 @@ include_once "header.php";
 
 </section>
 
-
 <?php
 include_once "footer.php";
 ?>
-
-
 </body>
 </html>
