@@ -1,39 +1,20 @@
 <?php
-
 include_once "config.php";
-
 session_start();
-
 if(!isset($_SESSION['admin_name'])){
    header('location:authorisation');
 }
-
-
-
-
-
-
 
 if(isset($_GET['delete'])){
    $id= $_GET['delete'];
   $req = mysqli_query($conn , "DELETE FROM Products WHERE id = $id");
   header("Location:admin_page");
 };
-
-
-
 ?>
-
-
-
-
-
-
 
 <?php
 include_once "head.php";
 ?>
-
 
 <body>
 
@@ -41,19 +22,11 @@ include_once "head.php";
 include_once "header.php";
 ?>
 
-
-
-
-
-
-
-
 <div class="container2">
    <div class="content1">
       <h1>Вітаю,<?php echo $_SESSION['admin_name'] ?></h1>
    </div>
 </div>
-
 
 <div class="tablucya_crud">   
 <div class="table-scroll">
@@ -109,7 +82,6 @@ include_once "header.php";
 <?php
 include_once "footer.php";
 ?>
-  
 
 </body>
 </html>
