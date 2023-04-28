@@ -1,25 +1,17 @@
 <?php
-
 include_once "config.php";
 
 if(isset($_POST['submit'])){
-
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $pass = md5($_POST['password']);
    $cpass = md5($_POST['cpassword']);
    $user_type = 'user';
-
    $select = " SELECT * FROM user WHERE email = '$email' && password = '$pass' ";
-
    $result = mysqli_query($conn, $select);
-
    if(mysqli_num_rows($result) > 0){
-
       $error[] = 'Користувач вже зареєстрований!';
-
    }else{
-
       if($pass != $cpass){
          $error[] = 'Не вірний пароль!';
       }else{
@@ -30,31 +22,16 @@ if(isset($_POST['submit'])){
    }
 
 };
-
-
 ?>
-
-
-
-
-
-
-
-
 
 <?php
 include_once "head.php";
 ?>
 
 <body>
-
-
 <?php
 include_once "header.php";
 ?>
-
-
-
 
 <div class="form-container">
 
@@ -76,8 +53,6 @@ include_once "header.php";
    </form>
 
 </div>
-
-
 
 <?php
 include_once "footer.php";
