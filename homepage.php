@@ -1,28 +1,16 @@
 <?php
 session_start();
 ?>
-
-
-
 <?php
 include_once "head.php";
 ?>
 
 <body>
-
-
-
 <?php
 include_once "header.php";
 ?>
-
-
-
-
 <section class="home" id="home">
-
   <div class="row">
-
       <div class="content">
           <h3>Вам подобаються гітари?</h3>
           <a href="products" class="btn">Купити</a>
@@ -33,15 +21,10 @@ include_once "header.php";
       </div>
 
   </div>
-
-
 </section>
-
-
 <?php
 include_once "footer.php";
 ?>
-
 
 </body>
 </html>
