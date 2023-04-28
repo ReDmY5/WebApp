@@ -7,7 +7,7 @@ if(!isset($_SESSION['admin_name'])){
 
 if(isset($_GET['delete'])){
    $id= $_GET['delete'];
-  $req = mysqli_query($conn , "DELETE FROM Products WHERE id = $id");
+  $req = mysqli_query($conn , "DELETE FROM products WHERE id = $id");
   header("Location:admin_page");
 };
 ?>
@@ -49,7 +49,7 @@ include_once "header.php";
                 
                 <?php 
 
-                $req = mysqli_query($conn , "SELECT * FROM Products");
+                $req = mysqli_query($conn , "SELECT * FROM products");
             
                 if(mysqli_num_rows($req) == 0){
 
