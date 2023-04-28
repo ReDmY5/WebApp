@@ -32,7 +32,6 @@ include_once "head.php";
 <?php
 include_once "header.php";
 ?>
-
 <div class="form-container">
 
    <form action="" method="post">
@@ -51,12 +50,9 @@ include_once "header.php";
       <input type="submit" name="submit" value="Зареєструватись" class="form-btn">
       <p>Вже зареєстровані? <a href="authorisation">Ввійти</a></p>
    </form>
-
 </div>
-
 <?php
 include_once "footer.php";
-?>
-  
+?> 
 </body>
 </html>
