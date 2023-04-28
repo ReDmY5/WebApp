@@ -1,17 +1,11 @@
 <?php
 session_start();
-
-
-
 if(isset($_SESSION['admin_name'])){
     $user_name = $_SESSION['admin_name'];
 }
 elseif(isset($_SESSION['user_name'])){
     $user_name = $_SESSION['user_name'];
 }
-
-
-
 
 include_once "config.php";
 
@@ -50,14 +44,11 @@ if(isset($_GET['vidnyati'])){
 }
 
 $grand_total = 0;
-
 ?>
-
 
 <?php
 include_once "head.php";
 ?>
-
 
 <body>
 
@@ -129,11 +120,8 @@ include_once "header.php";
         </thead>
     </table>  
 </div>
-
 </div>
    
-
-
 <?php
 include_once "footer.php";
 ?>
